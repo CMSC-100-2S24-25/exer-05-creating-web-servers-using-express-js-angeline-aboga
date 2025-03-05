@@ -8,7 +8,7 @@ needle.post(
         year_published: 1997
     },
     (err, res) => {
-        console.log(res.body);
+        console.log(res.success);
     }
 );
 
@@ -20,7 +20,7 @@ needle.post(
         year_published: 1998
     },
     (err, res) => {
-        console.log(res.body);
+        console.log(res.success);
     }
 );
 
@@ -31,6 +31,22 @@ needle.post(
         author: "Antoine Saint-Exupery",
         year_published: 1943
     },
+    (err, res) => {
+        console.log(res.success);
+    }
+);
+
+needle.get(
+    'http://localhost:3000/find-by-isbn-author?isbn=978-0-7475-3269-9&amp;author=J.K+Rowling',
+    { },
+    (err, res) => {
+        console.log(res.body);
+    }
+);
+
+needle.get(
+    'http://localhost:3000/find-by-author?author=J.K+Rowling',
+    { },
     (err, res) => {
         console.log(res.body);
     }

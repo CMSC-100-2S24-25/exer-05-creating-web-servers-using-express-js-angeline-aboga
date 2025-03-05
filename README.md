@@ -25,3 +25,5 @@ C-1L
 - lab handouts <!-- general -->
 - https://dmitripavlutin.com/access-object-properties-javascript/ <!-- accessing object properties -->
 - https://www.w3schools.com/js/js_object_definition.asp <!-- instantiating object -->
+- https://www.geeksforgeeks.org/node-js-fs-readfilesync-method/ <!-- readFileSync -->
+- https://www.w3schools.com/js/js_string_search.asp <!-- string search -->
